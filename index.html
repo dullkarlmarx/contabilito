@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script> src = "script.js" </script>
+    <title>contabilito</title>
 </head>
+
 <body>
-    
+    <h1> contabilito</h1>
+    <form>
+        <div>
+            <label for="description">descripcion</label>
+            <input type="text" id="descripcion">
+        </div>
+        <div> <label for="transaccion">Tipo transaccion</label>
+            <label for="transaccion" id="compra">compra</label>
+            <input type="radio" name="transaccion" value="compra">
+            <label for="transaccion" id="venta">venta</label>
+            <input type="radio" name="transaccion" value="venta">
+        </div>
+        <div>
+            <label for="iva">tipo IVA </label>
+            <label for="iva" id="basico"> Basico</label>
+            <input type="radio" name="iva" value="basico">
+            <label for="iva" id="minimo"> Minimo</label>
+            <input type="radio" name="iva" value="minimo">
+            <label for="iva" id="exento"> exento</label>
+            <input type="radio" name="iva" value="exento">
+        </div>
+        <div><label for="subtotal">Subtotal</label>
+            <input type="number" id="subtotal">
+        </div>
+        <div> <input type="submit" id="boton">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                     Descripcion
+                    </th>
+                    <th>
+                      Tipo  
+                    </th>
+                    <th>
+                        Subtotal($)
+                    </th>
+                    <th>
+                        IVA($)
+                    </th>
+                    <th>
+                       Total(IVA incluido) 
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </form>
 </body>
+
 </html>
